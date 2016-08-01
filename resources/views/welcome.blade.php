@@ -10,9 +10,15 @@
 
     </head>
     <body>
+
         <div class="container">
             <div class="content">
-
+                <h1>Tasks</h1>
+                <ul class="list-group">
+                    @foreach($tasks as $task)
+                    <li class="list-group-item">{{ $task->body  }}</li>
+                    @endforeach
+                </ul>
 
 
 
